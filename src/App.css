@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-container>div {
+    flex: 1 !important;
+    /* Ensure they take up equal space */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust status section */
+  .status-container {
+    margin-left: 0;
+  }
+}
