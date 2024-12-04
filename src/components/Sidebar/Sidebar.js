@@ -18,6 +18,19 @@ const Sidebar = () => {
 
 
 
+  // useEffect(() => {
+  //   const storedUser = JSON.parse(localStorage.getItem('User'));
+  //   console.log(storedUser)
+  //   if (!storedUser) {
+  //     // navigate('/'); 
+  //   } else {
+  //     setUserDetails({
+  //       name: storedUser.name,
+  //       Id: storedUser.Id,
+  //     });
+  //   }
+  // }, []);
+
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('User'));
     if (storedUser && storedUser.isValidUser) {
@@ -31,6 +44,7 @@ const Sidebar = () => {
       console.log("User data not found");
     }
   }, []);
+
 
 
 
@@ -76,20 +90,22 @@ const Sidebar = () => {
             <ul className="sidebar-menu">
               <li>
                 <FaTachometerAlt className="me-2" />
-                <span className="sidebar-text">&nbsp;Dashboard</span>
+                <Link to="/home/dashboard" style={{ textDecoration: 'none', color: 'black' }}>
+                  &nbsp;Dashboard
+                </Link>
               </li>
 
               <li>
                 <FaGasPump className="me-2" />
                 <span className="sidebar-text">&nbsp;
-                  <Link to="/pump" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Pump Sales</Link>
+                  <Link to="/home/pump" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Pump Sales</Link>
                 </span>
               </li>
 
               <li>
                 <FaSignOutAlt className="me-2" />
                 <span className="sidebar-text">&nbsp;
-                  <Link to="/create" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Create Employee</Link>
+                  <Link to="/home/create" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Create Employee</Link>
                 </span>
 
               </li>
@@ -97,20 +113,20 @@ const Sidebar = () => {
               <li>
                 <FaUserCheck className="me-2" />
                 <span className="sidebar-text">&nbsp;
-                  <Link to="/attendence" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Attendence</Link>
+                  <Link to="/home/attendence" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Attendence</Link>
                 </span>
               </li>
               <li>
                 <FaCreditCard className="me-2" />
                 <span className="sidebar-text">&nbsp;
-                  <Link to="/credit" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Credit Module</Link>
+                  <Link to="/home/credit" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Credit Module</Link>
                 </span>
               </li>
               <li>
                 <FaSave className="me-2" />
 
                 <span className="sidebar-text">&nbsp;
-                  <Link to="/save" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Saved Data</Link>
+                  <Link to="/home/save" style={{ textDecoration: 'none', color: 'black' }}>&nbsp;Saved Data</Link>
                 </span>
               </li>
             </ul>
@@ -125,11 +141,11 @@ const Sidebar = () => {
           <h2 style={{ color: 'blue' }}>Welcome,&nbsp;{userDetails?.name}&nbsp;({userDetails?.Id})</h2>
         </div>
         <Routes>
-          <Route path="/pump" element={<Pumpsales />} />
-          <Route path="/create" element={<Create_employee />} />
-          <Route path="/attendence" element={<Attendence />} />
-          <Route path="/credit" element={<CreditModule />} />
-          <Route path="/save" element={<SavedData />} />
+          <Route path="pump" element={<Pumpsales />} />
+          <Route path="create" element={<Create_employee />} />
+          <Route path="attendence" element={<Attendence />} />
+          <Route path="credit" element={<CreditModule />} />
+          <Route path="save" element={<SavedData />} />
         </Routes>
       </div>
     </div>

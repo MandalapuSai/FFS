@@ -23,13 +23,13 @@ function App() {
 
   return (
     <Router>
-    <Routes>
+      <Routes>
         <Route path="/" element={<Sign />} />
-        <Route path="/home" element={<Sidebar />} />
+        <Route path="/home/*" element={<Sidebar />} />
         <Route path="*" element={<NotFound />} />
-    </Routes>
-    <ToastContainer/>
-   </Router>
+      </Routes>
+      <ToastContainer />
+    </Router>
 
   );
 }

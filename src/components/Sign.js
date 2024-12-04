@@ -20,8 +20,8 @@ export default function Sign() {
 
 
     const LoginData = [
-        { id: 1, name: 'SAI', lastname: 'Dandabathula', email: 'sai@gmail.com', password: '123', Id: '5236' },
-        { id: 2, name: 'satish', lastname: 'Mandalapu', email: 'satish@gmail.com', password: '987', Id: '6757' }
+        { id: 1, name: 'SAI', lastname: 'Mandalapu', email: 'sai@gmail.com', password: '123', Id: '5236' },
+        { id: 2, name: 'satish', lastname: 'Dandabathula', email: 'satish@gmail.com', password: '987', Id: '6757' }
     ]
 
 
@@ -37,7 +37,7 @@ export default function Sign() {
         if (isValidUser) {
             toast.success("Login successfully !!!!")
             localStorage.setItem('User', JSON.stringify({ isValidUser }));
-            navigate('/home');
+            navigate('/home/dashboard');
         } else {
             toast.error("Invalid email or password !!!")
         }
