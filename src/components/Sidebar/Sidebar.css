@@ -7,7 +7,7 @@
 
 /* Sidebar styles */
 .sidebar-container {
-    background-color: #f5cdcd;
+    background-color: #fff;
     color: black;
     /* height: 100vh; */
     transition: width 0.3s ease;
@@ -15,7 +15,7 @@
 }
 
 .sidebar-container.expanded {
-    width: 250px;
+    width: 280px;
 }
 
 .sidebar-container.collapsed {
@@ -35,21 +35,27 @@
 }
 
 .sidebar-menu li {
-    padding: 15px 20px;
+    padding: 8px 20px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    /* transition: background-color 0.2s ease; */
+    border-radius: 50px;
+    margin: 10px 17px;
+    overflow: auto;
 }
 
-.sidebar-menu li:hover {
-    background-color: rgb(193, 231, 243);
+/* .sidebar-menu li:hover {
+    background-color:#dfe3f0;
+} */
+.txt:hover {
+    background-color: #dfe3f0 !important;
 }
 
 .sidebar-footer {
     position: absolute;
-    bottom: 15px;
-    /* width: 100%; */
-    margin-left: 5%;
+    bottom: 19px;
+    margin-left: 38px;
     text-align: center;
+    width: 170px;
 }
 
 .loggg {
@@ -64,7 +70,7 @@
 /* Content area */
 .content-container {
     flex: 1;
-    background-color: #f1f1f1;
+    background-color: #f8f8f8;
     padding: 20px;
     overflow-y: hidden;
     transition: margin-left 0.3s ease;
@@ -84,7 +90,7 @@
 }
 
 .menu-item-with-dropdown:hover {
-    background-color: rgb(193, 231, 243);
+    background-color: #dfe3f0;
 }
 
 .dropdown-icon {
@@ -109,3 +115,21 @@
 .submenu-item:hover {
     background-color: rgb(210, 240, 255);
 }
+
+
+
+@media (min-width: 320px) and (max-width: 900px) {
+
+    .sidebar-menu {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0 0;
+        height: 340px;
+        overflow: scroll
+    }
+
+
+}
+
+
+@media (min-width: 640px) and (max-width: 960px) {}

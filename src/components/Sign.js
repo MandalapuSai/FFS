@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import Fillingstation from '../assets/images/filling_station.jpg'
 
 
 export default function Sign() {
@@ -48,29 +49,23 @@ export default function Sign() {
     return (
         <div className='conatiner-fluid' style={{ overflow: 'hidden' }}>
             <div className='row'>
-                <div className='col-md-6'>
-                    <div style={{ height: '100vh' }}>
-                        <img src='https://keralaprisons.gov.in/assets/images/fuel_station/kannur_01.jpg' alt='' style={{ width: '100%', height: '100%' }} />
-                    </div>
+                <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6'>
+                    <div className="Fillingstation_warpper"></div>
                 </div>
-                <div className='col-md-6'>
-                    <div
-                        className="d-flex justify-content-center align-items-center"
-                        style={{ height: "100vh", backgroundColor: "#f8f9fa", padding: '0px 25px' }}
-                    >
-                        <div className="form-container bg-white p-4 rounded shadow" >
+                <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6'>
+                    <div className="Sign_box_warpper">
+                        <div className="Sign_warpper" >
                             {/* style={{ maxWidth: "400px", width: "100%" }} */}
                             <form onSubmit={Submit}>
-                                <div>
-                                    <h2 className="text-center mb-4">Sign In</h2>
+                                <div className="sign_lable1">
+                                   Sign In
                                 </div>
 
                                 <div className="mb-3">
-                                    <input
+                                    <input className="input_lable"
                                         value={formData.email}
                                         name="email"
-                                        type="email"
-                                        className="form-control"
+                                        type="email"                                        
                                         id="email"
                                         placeholder="Email address"
                                         onChange={handleChange}
@@ -84,7 +79,7 @@ export default function Sign() {
                                             value={formData.password}
                                             name="password"
                                             type={passwordVisible ? "text" : "password"}
-                                            className="form-control"
+                                            className="input_lable_pass"
                                             id="password"
                                             placeholder="Enter your password"
                                             onChange={handleChange}
@@ -103,24 +98,22 @@ export default function Sign() {
                                     </div>
                                 </div>
 
-                                <div className="form-check mb-3">
+                                <div className="Terms_top">
                                     <input
                                         type="checkbox"
-                                        className="form-check-input"
+                                        className="Conditions_checkinput"
                                         id="terms"
                                         required
                                     />
                                     <label
-                                        className="form-check-label"
-                                        htmlFor="terms"
-                                        style={{ fontSize: "0.8rem" }}
-                                    >
+                                        className="account_lable_p"
+                                        htmlFor="terms">
                                         By creating an account, you agree to our Terms and Conditions
                                         Privacy Policy
                                     </label>
                                 </div>
 
-                                <button type="submit" className="btn btn-primary w-100">
+                                <button type="submit" className="submit_btn">
                                     Sign In
                                 </button>
                             </form>

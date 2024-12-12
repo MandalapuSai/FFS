@@ -1,3 +1,242 @@
-h2{
-    color: red;
+.pump_warpper {}
+
+.pump_data_warpper {
+    width: 100%;
+    height: auto;
+    background: #dfe3f0;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.date_warpper {
+    width: 25%;
+    float: left;
+    padding: 25px 12px;
+    overflow: auto;
+}
+
+.data_lable {
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    text-align: left;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.data_input_lable {
+    float: left;
+    width: 100%;
+}
+
+.data_input_text {
+    width: 100%;
+    height: 40px !important;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #cccccc78;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    padding-left: 9px;
+    outline: none;
+}
+
+.pump_Master_warpper {
+    width: 100%;
+    background: #002B8B;
+    padding: 16px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+}
+
+.Petrol_lable {
+    color: #002B8B;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    padding: 14px 0px 0px 0px;
+    font-weight: 500;
+}
+
+.Disel_qmr_warpper1 {
+    background: #b8e7da;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.Disel_qmr_warpper {
+    background: #ECCAAC;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.Total_qmr_warpper {
+    background: #E1FFED;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.qmr_warpper {
+    background: #dfe3f0;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.qmr_petrol_warpper1 {
+    width: 100%;
+}
+
+.sub_qmr_petrol_warpper1 {
+    width: 97%;
+    float: left;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #cccccc78;
+    margin: 22px;
+    height: auto;
+    overflow: auto;
+}
+
+.sub_qmr_petrol_la_1 {
+    width: 5%;
+    float: left;
+    margin-right: 30px;
+}
+
+.sub_qmr_petrol_la_2 {
+    width: 16%;
+    float: left;
+    margin: 19px 23px 10px 0px;
+}
+
+.dm_sub_qmr_petrol_la_2 {
+    width: 18%;
+    float: left;
+    margin: 24px 23px 18px 33px;
+}
+
+.sub_qmr_text {
+    background: #E0E5F1;
+    margin: 23px 0px 15px 14px;
+    height: 64px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 68px;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+}
+
+.qmr_data_input_text {
+    width: 100%;
+    height: 40px !important;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px #cccccc78;
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    text-align: left;
+    font-weight: 500;
+    padding-left: 18px;
+    outline: none;
+}
+
+.pump_sales_warpper1 {
+    background: #EEEEEE;
+    margin: 25px 0px 0px 0px;
+    padding: 13px;
+    border-radius: 5px;
+    overflow: auto;
+    width: 100%;
+}
+
+.pump_sales_t1 {
+    width: 406px;
+    float: right;
+}
+
+.Sales_lable {
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    float: left;
+    width: 149px;
+    line-height: 39px;
+    font-weight: 500;
+}
+
+.Sales_input {
+    float: left;
+    width: 243px;
+}
+
+.save_warpper {}
+
+.save_warpper_panle1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.save_btn_pump1 {
+    background: #002B8B;
+    border: 0px;
+    color: #fff;
+    padding: 9px 45px;
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    margin-right: 30px;
+}
+
+.clear_btn_pump1 {
+    background: #FBC000;
+    border: 0px;
+    color: #fff;
+    padding: 9px 45px;
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    margin-right: 30px;
+}
+
+.number_warpper1 {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.number_warpper1_section1 {
+    width: 28%;
+    float: left;
+    margin-right: 40px;
+}
+
+.input_number_warpper1_section1 {
+    width: 100%;
+    float: left;
+}
+
+.data_input_lable_1 {
+    width: 53%;
+    float: left;
+    margin-right: 21px;
+
+}
+
+.data_input_lable_2 {
+    width: 36%;
+    float: left;
 }
